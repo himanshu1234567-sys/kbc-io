@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("download\ \(1\).jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: aliceblue;">Lets Play </h1>
+    <script>
+        var kbc = {
+            'current_question': 0,
+            print_question: function() {
+                var q1 = prompt(kbc.question_list[0] + kbc.options);
+                var q2 = prompt(kbc.question_list[1] + kbc.options);
+                var q3 = prompt(kbc.question_list[2] + kbc.options);
+                var q4 = prompt(kbc.question_list[3] + kbc.options);
+
+                if (q1 == kbc.correct_answer[0]) {
+                    console.log("Correct answer");
+                } else {
+                    console.log("incorrect");
+
+                }
+                if (q2 == kbc.correct_answer[1]) {
+                    console.log("Correct answer");
+                } else {
+                    console.log("incorrect");
+                }
+                if (q3 == kbc.correct_answer[2]) {
+                    console.log("Correct answer");
+                } else {
+                    console.log("incorrect");
+                }
+                if (q4 == kbc.correct_answer[3]) {
+                    console.log("Correct answer");
+                } else {
+                    console.log("incorrect");
+                }
+
+            },
+            'question_list': ["Cleanest City? :", "Capital of M.P.? :", "Mahakal Placed in? ;", "Film Industry? :"],
+            'correct_answer': ["Indore", "Bhopal", "Ujjain", "Mumbai"],
+            'options': ["Indore", "Bhopal", "Ujjain", "Mumbai"],
+        };
+        var question = kbc.qustion_list;
+        console.log(question);
+        var question2 = kbc.print_question();
+        console.log(question2);
+    </script>
+</body>
+
+</html>
